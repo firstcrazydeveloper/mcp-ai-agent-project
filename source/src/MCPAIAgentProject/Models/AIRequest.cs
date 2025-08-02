@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MCPAIAgentProject.Models
+﻿namespace MCPAIAgentProject.Models
 {
-    internal class AIRequest
+    public class AIRequest
     {
+        public string Message { get; set; } = string.Empty;
     }
 }
