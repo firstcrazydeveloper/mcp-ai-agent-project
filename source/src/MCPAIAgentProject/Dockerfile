@@ -11,6 +11,10 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["MCPAIAgentProject/MCPAIAgentProject.csproj", "MCPAIAgentProject/"]
+
+# Copy local.settings.json explicitly
+COPY local.settings.json /home/site/wwwroot/local.settings.json
+
 RUN dotnet restore "./MCPAIAgentProject/MCPAIAgentProject.csproj"
 COPY . .
 WORKDIR "/src/MCPAIAgentProject"
