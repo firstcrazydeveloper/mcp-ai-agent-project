@@ -11,7 +11,6 @@ A **.NET 9 Azure Function** using **Azure OpenAI** with:
 ---
 
 ## **1. Prerequisites**
-- [Azure OpenAI Service](https://portal.azure.com/)
 - [.NET 9 SDK](https://dotnet.microsoft.com/download)
 - [Node.js](https://nodejs.org) (for Functions Core Tools)
 - [Docker](https://www.docker.com/)
@@ -118,3 +117,79 @@ Use nested values (helpful when Docker/env overrides are used):
 
 **Note:**  
 If a value is not found in these configs, the application will throw an error to prevent running with missing settings.
+
+
+---
+
+## **7. API Endpoints**
+
+The following HTTP endpoints are available in this Azure Function App:
+
+### **1. MCPAgentAPI**
+- **URL:** `/api/MCPAgentAPI`
+- **Methods:** `GET`, `POST`
+- **Request Body (POST):**
+```json
+{
+  "message": "Write a function for binary search in C#."
+}
+```
+- **Response:**
+```json
+{
+  "response": "public int BinarySearch(int[] arr, int target) { ... }"
+}
+```
+
+### **2. MCPAgentFunctionAPI**
+- **URL:** `/api/MCPAgentFunctionAPI`
+- **Methods:** `GET`, `POST`
+- **Request Body (POST):**
+```json
+{
+  "message": "Explain how binary search works."
+}
+```
+- **Response:**
+```json
+{
+  "response": "Binary search is an algorithm that finds the position of a target value within a sorted array..."
+}
+```
+
+### **3. MCPAgentFunctionSDK**
+- **URL:** `/api/MCPAgentFunctionSDK`
+- **Methods:** `GET`, `POST`
+- **Request Body (POST):**
+```json
+{
+  "message": "Write a function for quicksort in C#."
+}
+```
+- **Response:**
+```json
+{
+  "response": "public void QuickSort(int[] arr, int left, int right) { ... }"
+}
+```
+
+### **4. MCPAgentSDK**
+- **URL:** `/api/MCPAgentSDK`
+- **Methods:** `GET`, `POST`
+- **Request Body (POST):**
+```json
+{
+  "message": "Write a function for merge sort in C#."
+}
+```
+- **Response:**
+```json
+{
+  "response": "public void MergeSort(int[] arr) { ... }"
+}
+```
+
+**Note:**  
+- All endpoints accept a `message` in the request body (for `POST`).
+- Responses are AI-generated content using Azure OpenAI GPT models.
+
