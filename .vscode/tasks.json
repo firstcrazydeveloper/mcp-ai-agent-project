@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/source/src/MCPAIAgentProject/MCPAIAgentProject.csproj",
+                "${workspaceFolder}/source/c-sharp/src/MCPAIAgentProject/MCPAIAgentProject.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

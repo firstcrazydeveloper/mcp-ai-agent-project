@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "MCPAIAgentProject": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7115"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "containerRunArguments": "--init",
+      "httpPort": 33007,
+      "useSSL": false
+    }
+  }
+}
