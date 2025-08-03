@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Isolated Worker",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "45044"
+    },
+    {
+      "name": "Debug Azure Function (func start)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "func",
+      "args": [
+        "start",
+        "--script-root",
+        "${workspaceFolder}/source/src/MCPAIAgentProject",
+        "--port",
+        "7072"
+      ],
+      "cwd": "${workspaceFolder}/source/src/MCPAIAgentProject",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "preLaunchTask": "build (functions)"
+    }
+  ]
+}
