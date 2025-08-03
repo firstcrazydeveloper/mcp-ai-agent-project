@@ -7,6 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPAIAgentProject", "src\MC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp", "csharp", "{D151FC41-B39A-4C38-AE8A-448F73BDAD6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "python", "python", "{BAA7AAA0-1968-45F3-90F8-845B74034696}"
+	ProjectSection(SolutionItems) = preProject
+		..\python\.funcignore = ..\python\.funcignore
+		..\python\.gitignore = ..\python\.gitignore
+		..\python\function_app.py = ..\python\function_app.py
+		..\python\host.json = ..\python\host.json
+		..\python\local.settings.json = ..\python\local.settings.json
+		..\python\requirements.txt = ..\python\requirements.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,7 +34,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5076A973-E963-4627-9557-0D00959520E2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5076A973-E963-4627-9557-0D00959520E2} = {D151FC41-B39A-4C38-AE8A-448F73BDAD6E}
+		{D151FC41-B39A-4C38-AE8A-448F73BDAD6E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BAA7AAA0-1968-45F3-90F8-845B74034696} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C52D0EA8-3BDD-4667-8208-36FA3D8E55EF}
