@@ -15,5 +15,5 @@ In Terminal find the Process Id and update that in launch.json in configurations
 
 #Docker command
 
-1. docker run  mcpagentfunctionv1.0
-2. docker run  mcpagentfunctionv1.0
+docker build  -f MCPAIAgentProject/Dockerfile -t my-azure-functionv1.1 .
+docker run -p 8080:80 --name myfunctiondebug my-azure-functionv1.1
