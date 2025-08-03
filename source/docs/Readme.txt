@@ -17,3 +17,8 @@ In Terminal find the Process Id and update that in launch.json in configurations
 
 docker build  -f MCPAIAgentProject/Dockerfile -t my-azure-functionv1.1 .
 docker run -p 8080:80 --name myfunctiondebug my-azure-functionv1.1
+
+
+This may be a liittle bit too late but this command can be run even when pip path is not set. I am using Python 3.7 running on Windows 10 and this is the command
+
+py -m pip install requests

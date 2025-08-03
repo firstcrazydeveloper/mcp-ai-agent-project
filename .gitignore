@@ -13,6 +13,9 @@ local.settings.json
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+__pycache__/
+*.py[cod]
+*$py.class
 /.vs/slnx.sqlite
 /.vs/mcp-ai-agent-project/CopilotIndices/17.14.734.62261
 /.vs
