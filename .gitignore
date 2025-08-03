@@ -7,3 +7,10 @@
 /.vs
 /source/.vs/MCPAIAgentProject
 /source/src/MCPAIAgentProject/Properties
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+source/.vs/ProjectEvaluation/mcpaiagentproject.metadata.v9.bin
+source/.vs/ProjectEvaluation/mcpaiagentproject.projects.v9.bin
+source/.vs/ProjectEvaluation/mcpaiagentproject.strings.v9.bin
