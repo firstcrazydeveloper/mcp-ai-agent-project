@@ -48,7 +48,7 @@ func start --script-root ./MCPAIAgentProject --verbose
 Your functions will be available at:
 
 ```
-http://localhost:7071/api/<FunctionName>
+http://localhost:7072/api/<FunctionName>
 ```
 
 ---
@@ -77,8 +77,9 @@ http://localhost:7071/api/<FunctionName>
 
 ### **Build & Run:**
 ```bash
-docker build -t mcpagentfunctionv1.0 .
-docker run -p 8080:80 mcpagentfunctionv1.0
+docker build  -f MCPAIAgentProject/Dockerfile -tmy-azure-functionv1.1 .
+docker run -p 8080:80 --name myfunctiondebug my-azure-functionv1.1
+
 ```
 
 Then access:
